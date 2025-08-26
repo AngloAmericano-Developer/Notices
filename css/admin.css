@@ -1,0 +1,136 @@
+
+#alumnPage{
+	font-size: 12px;
+}
+
+#image{
+	max-height: 85%;
+	max-width: 80%;
+}
+
+#imageAnglo{
+	margin-top: 10%; 
+	max-height: 50%;
+	max-width: 50%;
+	margin-left: auto;	
+}
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.picker {position:relative;width:90%;margin:0 auto}
+.inputpicker {width:100%;padding:10px;background:#f2f2f2}
+	
+.oculto {width:100%;background:#f2f2f2;border-radius:0 0 10px 10px;padding:10px;overflow:auto;max-height:200px;display:none}
+	.oculto ul {display:inline;float:left;width:100%;margin:0;padding:0}
+		.oculto ul li {margin:0;padding:0;display:block;width:30px;height:30px;text-align:center;font-size:15px;font-family:"fontawesome";float:left;cursor:pointer;color:#666;line-height:30px;transition:0.2s all}
+		.oculto ul li:hover {background:#FFF;color:#000}
+	.oculto input[type=text] { font-size:13px;padding:5px;margin:0 0 10px 0;border:1px solid #ddd; }
+
+.btn.btn-outline-success {          
+  opacity: 0.5;       
+}
+.btn.btn-outline-success.active  {       
+  opacity: 1;       
+}
+
+.btn.btn-outline-success i {          
+  opacity: 0;       
+}
+.btn.btn-outline-success.active i {          
+  opacity: 1;       
+}
+
+.btn.btn-outline-danger {          
+  opacity: 0.5;       
+}
+.btn.btn-outline-danger.active  {       
+  opacity: 1;       
+}
+
+.btn.btn-outline-danger i {          
+  opacity: 0;       
+}
+.btn.btn-outline-danger.active i {          
+  opacity: 1;       
+}
+
+.btn.btn-outline-primary {          
+  opacity: 0.5;       
+}
+.btn.btn-outline-primary.active  {       
+  opacity: 1;       
+}
+
+.btn.btn-outline-primary i {          
+  opacity: 0;       
+}
+.btn.btn-outline-primary.active i {          
+  opacity: 1;       
+}
+
+.btn.btn-outline-warning {          
+  opacity: 0.5;       
+}
+.btn.btn-outline-warning.active  {       
+  opacity: 1;       
+}
+
+.btn.btn-outline-warning i {          
+  opacity: 0;       
+}
+.btn.btn-outline-warning.active i {          
+  opacity: 1;       
+}
+
+.btn.btn-outline-info {          
+  opacity: 0.5;       
+}
+.btn.btn-outline-info.active  {       
+  opacity: 1;       
+}
+
+.btn.btn-outline-info i {          
+  opacity: 0;       
+}
+.btn.btn-outline-info.active i {          
+  opacity: 1;       
+}
+
+.btn.btn-outline-secondary {          
+  opacity: 0.5;       
+}
+.btn.btn-outline-secondary.active  {       
+  opacity: 1;       
+}
+
+.btn.btn-outline-secondary i {          
+  opacity: 0;       
+}
+.btn.btn-outline-secondary.active i {          
+  opacity: 1;       
+}
+
+.btn.btn-outline-dark {          
+  opacity: 0.5;       
+}
+.btn.btn-outline-dark.active  {       
+  opacity: 1;       
+}
+
+.btn.btn-outline-dark i {          
+  opacity: 0;       
+}
+.btn.btn-outline-dark.active i {          
+  opacity: 1;       
+}
+.labelInvalid {
+	/*background: #F78181;*/
+	background: #F5A9A9;
+}
+.labelValid {
+	background: #D8F6CE;
+}

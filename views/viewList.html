@@ -1,0 +1,111 @@
+<head>
+  <link rel="stylesheet" href="css/viewList.css" />
+</head>
+<br>
+<div class="container animated zoomIn">
+  <div class="card animated zoomIn"><!-- 
+    <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body table table-responsive">
+      <h5 class="card-title">CREACIÓN LISTA ESTUDIANTES</h5>
+      <hr>
+      <div class="input-group rounded">
+        <!-- <label for="formGroupGrade" ><strong>Circular</strong></label> -->
+        <input type="text" class="form-control rounded formGroupTema" id="TemaE" placeholder="Tema Circular" aria-label="Search" aria-describedby="search-addon" />
+      </div>
+      <div class="row g-3">
+        <div class="col-lg-6 col-md-6">
+          <label for="formGroupGrade" class="col-form-label col-sm-12 col-form-label-sm"> <strong>Grado</strong></label>
+          <select class="form-select form-select-sm formGroupGrade" aria-label=".form-select-sm example" id="formGroupGrade">
+            <option selected value="--">--</option>
+          </select>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <label for="formGroupCurse" class="col-form-label col-sm-12 col-form-label-sm"> <strong>Curso</strong> </label>
+          <select class="form-select form-select-sm formGroupCurse" aria-label=".form-select-sm example" id="formGroupCurse">
+            <option selected value="--">--</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start mt-3">
+                <button id="btnsend" class="btn btn-primary d-flex align-items-center">
+          Buscar
+        </button>
+        <button type="button" style="color: white;" class="btn btn-info d-flex align-items-center" data-toggle="modal" data-target=".bd-example-modal-lg">
+          Vista
+        </button>
+        <button type="submit" id="btnSearchDevices" onclick="download()" class="btn btn-success d-flex align-items-center">
+          Exportar Excel
+        </button>
+
+      </div>
+      <hr class="style1">
+      <div class="row">
+        <div class="col-md-12" id="tableContent">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<br>
+<!-- CONTAINER PARA AGREGAR EL NOMBRE DE LOS ESTUDIANTES -->
+<div class="container animated zoomIn">
+  <div class="card animated zoomIn"><!-- 
+    <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body table table-responsive">
+      <h5 class="card-title">LISTA ESTUDIANTES : <a href=""></a></h5>
+      <hr class="style1">
+        <table  class="table table-light table-striped-columns">
+          <thead>
+            <tr>
+              <th style="text-align: center;" class="table-primary center1">
+                Seleccionar
+                <input style="margin-left: 5px;" type="checkbox" id="chkTodos" class="form-check-input" />
+              </th>
+              <th class="table-primary center1">Nombre</th>
+              <th class="table-primary center1">Curso</th>
+            </tr>
+          </thead>
+          <tbody id="tablaEstudiantes">
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+      <div class="row">
+        <div class="col-md-12" id="tableContent"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- REPORTE DE LOS SELECCIONADOS -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+       <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reporte Estudiantes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Total estudiantes seleccionados : <b id="totalPrice"></b></p>
+        <div>
+          <table id="tabla-container"  class="table table-bordered">
+
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>

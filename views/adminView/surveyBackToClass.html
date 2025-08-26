@@ -1,0 +1,133 @@
+<p>Reciban un cordial saludo:</p>
+<p>Las Directivas del colegio estamos muy interesadas en prepararnos para la reanudación de las clases y tomar las medidas necesarias oportunamente, cumpliendo las directrices del gobierno.</p>
+<p>Deseamos conocer su opinión para organizar de la mejor manera las próximas actividades y les solicitamos el favor de diligenciar la siguiente encuesta.</p>
+<div class="row p-1">
+  <div class="col-lg-12">
+    <label class=""><span class="label label-default">1. ¿Su hijo(a) ha presentado alguna enfermedad importante?   </span></label>
+    <div class="col-lg-12 inputGroupContainer">
+      <div class="btn-group" data-toggle="buttons">
+        <label class='btn btn-outline-success btn-sm btn_question major_disease' data-val='Si'><input class='form-control' type='radio' name='major_disease'>Si <i class="fa fa-check" aria-hidden="true"></i></label>
+        <label class='btn btn-outline-danger btn-sm btn_question major_disease' data-val='No'><input class='form-control' type='radio' name='major_disease'>No <i class="fa fa-times" aria-hidden="true"></i></label>
+      </div>
+      <div class="animated fadeInDown d-none" id="div_major_disease">
+        <div class="input-group p-2">
+          <label for="exampleFormControlTextarea1">Hace cuánto tiempo?&nbsp;</label>
+          <textarea class="form-control" id="how_long_major_disease" placeholder="Cuánto tiempo?" rows="2"></textarea>
+        </div>
+        <div class="input-group p-2">
+          <label for="exampleFormControlTextarea1">Cuál(es)?&nbsp;</label>
+          <textarea class="form-control" id="which_major_disease" placeholder="Cuál(es)?" rows="2"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row p-1">
+  <div class="col-lg-12">
+    <label class=""><span class="label label-default">2. ¿Actualmente presenta alguna enfermedad?</span></label>
+    <div class="col-lg-12 inputGroupContainer">
+      <div class="btn-group" data-toggle="buttons">
+        <label class='btn btn-outline-success btn-sm btn_question current_disease' data-val='Si'><input class='form-control' type='radio' name='current_disease'>Si <i class="fa fa-check" aria-hidden="true"></i></label>
+        <label class='btn btn-outline-danger btn-sm btn_question current_disease' data-val='No'><input class='form-control' type='radio' name='current_disease'>No <i class="fa fa-times" aria-hidden="true"></i></label>
+      </div>
+      <div class="input-group p-2 animated fadeInDown d-none" id="div_current_disease">
+        <textarea class="form-control" id="reason_current_disease" placeholder="¿Cual?" rows="2"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<p>Para dar cumplimiento a los requerimientos de la Secretaría de Salud al tramitar la aprobación de los Protocolos para la reanudación de las clases presenciales, les solicitamos la siguiente información:</p>
+<div class="row p-1">
+  <div class="col-lg-12">
+    <label class=""><span class="label label-default">a. ¿Conviven con familiares que presenten factores de riesgo de comorbilidad?: enfermedades cardiovasculares, hipertensión, diabetes, enfermedades respiratorias crónicas (asma, EPOC), uso de corticoides o inmunosupresores (lupus o esclerosis múltiple), enfermedad renal crónica, cáncer o tratamientos con radioterapia o quimioterapia, mujeres embarazadas, enfermedades autoinmunes, VIH).</span></label>
+    <div class="col-lg-12 inputGroupContainer">
+      <div class="btn-group" data-toggle="buttons">
+        <label class='btn btn-outline-success btn-sm btn_question members_coexistence' data-val='Si'><input class='form-control' type='radio' name='members_coexistence'>Si <i class="fa fa-check" aria-hidden="true"></i></label>
+        <label class='btn btn-outline-danger btn-sm btn_question members_coexistence' data-val='No'><input class='form-control' type='radio' name='members_coexistence'>No <i class="fa fa-times" aria-hidden="true"></i></label>
+      </div>
+      <div class="animated fadeInDown d-none" id="div_members_coexistence">
+        <div class="input-group p-2">
+          <label for="exampleFormControlTextarea1">Parentesco:&nbsp;</label>
+          <textarea class="form-control" id="relationship_members_coexistence" placeholder="Nombre" rows="2"></textarea>
+        </div>
+        <div class="input-group p-2">
+          <label for="exampleFormControlTextarea1">¿Cuáles?&nbsp;</label>
+          <textarea class="form-control" id="which_members_coexistence" placeholder="¿Cuáles?" rows="2"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row p-1">
+  <div class="col-lg-12">
+    <label class=""><span class="label label-default">b. ¿Conviven con adultos mayores de 60 años?</span></label>
+    <div class="col-lg-12 inputGroupContainer">
+      <div class="btn-group" data-toggle="buttons">
+        <label class='btn btn-outline-success btn-sm btn_question elderly' data-val='Si'><input class='form-control' type='radio' name='elderly'>Si <i class="fa fa-check" aria-hidden="true"></i></label>
+        <label class='btn btn-outline-danger btn-sm btn_question elderly' data-val='No'><input class='form-control' type='radio' name='elderly'>No <i class="fa fa-times" aria-hidden="true"></i></label>
+      </div>
+      <div class="input-group p-2 animated fadeInDown d-none" id="div_elderly">
+        <textarea class="form-control" id="reason_elderly" placeholder="Parentesco" rows="2"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row p-1">
+  <div class="col-lg-12">
+    <label class=""><span class="label label-default">c. ¿Conviven con personas que son profesionales de la salud y trabajan en el área asistencial? </span></label>
+    <div class="col-lg-12 inputGroupContainer">
+      <div class="btn-group" data-toggle="buttons">
+        <label class='btn btn-outline-success btn-sm btn_question profesional_health' data-val='Si'><input class='form-control' type='radio' name='profesional_health'>Si <i class="fa fa-check" aria-hidden="true"></i></label>
+        <label class='btn btn-outline-danger btn-sm btn_question profesional_health' data-val='No'><input class='form-control' type='radio' name='profesional_health'>No <i class="fa fa-times" aria-hidden="true"></i></label>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row p-1">
+  <div class="col-lg-12">
+    <label class=""><span class="label label-default">d. ¿Su hijo(a) convive o ha estado en contacto con personas que fueron diagnosticadas como positivo para COVID 19, ha estado a menos de un metro de personas diagnosticadas con la enfermedad (contacto estrecho) o convive con personas con diagnóstico en estudio (pruebas de laboratorio pendientes)?</span></label>
+    <div class="col-lg-12 inputGroupContainer">
+      <div class="btn-group" data-toggle="buttons">
+        <label class='btn btn-outline-success btn-sm btn_question people_diagnosed' data-val='Si'><input class='form-control' type='radio' name='people_diagnosed'>Si <i class="fa fa-check" aria-hidden="true"></i></label>
+        <label class='btn btn-outline-danger btn-sm btn_question people_diagnosed' data-val='No'><input class='form-control' type='radio' name='people_diagnosed'>No <i class="fa fa-times" aria-hidden="true"></i></label>
+      </div>
+      <div class="input-group p-2 animated fadeInDown d-none" id="div_people_diagnosed">
+        <textarea class="form-control" id="reason_people_diagnosed" placeholder="Hace cuánto tiempo?" rows="2"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row p-1">
+  <div class="col-lg-12">
+    <label class=""><span class="label label-default">e. Especifique su lugar ACTUAL de residencia</span></label>
+    <div class="col-lg-12 inputGroupContainer">
+      <label class=""><span class="label label-default">Barrio:</span></label>
+      <div class="input-group"><input id="neighborhood" placeholder="Barrio" class="form-control form-control-sm" value="" type="text"></div>
+      <label class=""><span class="label label-default">Localidad:</span></label>
+      <div class="input-group"><input id="location" placeholder="Localidad" class="form-control form-control-sm" value="" type="text"></div>
+    </div>
+  </div>
+</div>
+<div class="row p-1">
+  <div class="col-lg-12">
+    <label class=""><span class="label label-default">3. ¿Estarían dispuestos a enviar a su hijo(a) al colegio a recibir las clases presenciales a partir de la fecha autorizada por el Gobierno Nacional?</span></label>
+    <div class="col-lg-12 inputGroupContainer">
+      <div class="btn-group" data-toggle="buttons">
+        <label class='btn btn-outline-success btn-sm btn_question send_class' data-val='Si'><input class='form-control' type='radio' name='send_class'>Si <i class="fa fa-check" aria-hidden="true"></i></label>
+        <label class='btn btn-outline-danger btn-sm btn_question send_class' data-val='No'><input class='form-control' type='radio' name='send_class'>No <i class="fa fa-times" aria-hidden="true"></i></label>
+      </div>
+    </div>
+  </div>
+</div>
+<p>Les recomendamos que su hijo porte en su maleta diariamente el gel antibacterial para utilizarlo:</p>
+<p>
+a) Al llegar al colegio.<br>
+b) En los descansos.<br>
+c) Al ingresar al comedor <br>
+d) En otras oportunidades.
+</p>
+<p>El colegio instaló lavamanos unipersonales y dispensadores de gel antibacterial, pero no serán suficientes para el uso de toda la comunidad.</p>
+<p>Agradecemos por su colaboración.</p>
+<p>Cordialmente,</p>
+<p><strong>COLEGIO ANGLO AMERICANO</strong></p>

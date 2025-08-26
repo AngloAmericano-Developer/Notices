@@ -1,0 +1,52 @@
+<div class="modal fade bd-example-modal-lg" id="ModalLargeObs" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" id= "modalLargeCreate" role="document">
+		<div class="modal-content">
+			<div class="modal-header" style='background-color:#E6E6E6'>
+				<div id="headTag">
+					<div class="row modal-title" id="tittleContent">
+						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+							<h5 id="titleModalLarge" style="text-align: center;"></h5>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form id="form1" autocomplete="off">
+				<div class="modal-body" style='background-color:#EFFBFB'>
+					<div id="bodyTagLarge" style="max-height:85%; height: 400px; overflow-y: auto; overflow-x: auto;"></div>
+					<div id="bodyAuth" class="p-2 d-none" align="center">
+						<div class="row" align="center">
+							<div class="col-md-12" align="center">
+								<pre class="alert alert-info">Seleccione una opción teniendo en cuenta que no podrá ser modificada posteriormente<br> una vez cerrada la circular.</pre>
+								<div class="btn-group" data-toggle="buttons">
+									<label class='btn btn-outline-success btn-sm authNotice' data-val='Si'><input class='form-control' type='radio' name='autorizacion' value="Si">Si <i class="fa fa-check" aria-hidden="true"></i></label>
+									<label class='btn btn-outline-danger btn-sm authNotice' data-val='No'><input class='form-control' type='radio' name='autorizacion' value="No">No <i class="fa fa-times" aria-hidden="true"></i></label>
+								</div>
+								<!--<div class="dlk-radio btn-group">										
+									<label class="btn btn-success">
+										<input name="autorizacion" class="form-control" type="radio" value="1">
+										<i class="fa fa-check"> Si</i>
+									</label>
+									<label class="btn btn-danger">
+										<input name="autorizacion" class="form-control" type="radio" value="0" defaultchecked="checked">
+										<i class="fa fa-times"> No</i>
+									</label>
+								</div>-->
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="modal-footer" style='background-color:#E6E6E6'>
+					<span id="errorModalLarge" class="animated infinite flash"></span>
+					<div id="buttons_action_large">
+						<button type="button" id="btnPrintNotice" class="btn btn-info btn-sm"> Imprimir <i class="fa fa-print" aria-hidden="true"></i></button>
+						<button type="submit" id="btnModalLarge" onclick="verificarDesprendible(event);" class="btn btn-info btn-sm" disabled="disabled"> Enviar <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+					</div>
+					<button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="modal">Salir <i class="fa fa-window-close" aria-hidden="true"></i></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
